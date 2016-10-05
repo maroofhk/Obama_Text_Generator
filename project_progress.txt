@@ -1,0 +1,54 @@
+1. speech_analyzer.ipynb
+
+- this is the preliminary data pull
+
+----------------------------------------
+2. speech_data_pull.ipynb
+
+- automatic query
+
+----------------------------------------
+3. speech_data_pull_v2.ipynb
+
+- automatic query that manages to pull data in a more unhindered fashion
+
+----------------------------------------
+4. text_analysis
+
+- was trying to do dimension reduction. but am confused with how 
+  all the doc vectors are pointing roughly in the same region.
+  
+----------------------------------------
+5. markov
+
+- first stab at getting markov chain to work
+- managed to get ngram features extrated to run on a test text
+- next project is to get n-skip to work on the markov chain
+
+----------------------------------------
+6. speech_data_pull_v3.ipynb
+
+- now I have to get the other speeches
+- this has to be done before continuing with next section
+- the 2008 speeches have been combined in one document 'bunchSpeeches.txt'
+- this will mostly be used in apply_lda_X versions.
+
+----------------------------------------
+7. apply_lda.ipynb
+
+- this is the one where the first set of analysis was done 
+  using lda. 
+- Start looking in from the portion marked 'how about we combine many
+  texts together and try this out'
+   --> open the file 'bulkSpeeches.txt' ==> txtFile
+   --> clenan up the above file ==> updatedTextList
+- start lda process
+- this model is pickled as ==> lda_model.pkl
+- lda_docs where the documents-to-topic are here as lists
+- rest is generating from a single topic a dataframe where 
+  one column is with topic number and the other sentences 
+  associated with topic in question.
+- a more advanced version is 'apply_lda.ipynb'
+
+[] find the dominant features for each candidate and use it to analyze text to see 
+   whom it sides with

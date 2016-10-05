@@ -1,0 +1,7 @@
+project fletcher additional work
+
+- run prediction on lda topic data
+
+
+
+
